@@ -1,0 +1,363 @@
+/* Geral */
+.container {
+    max-width: 2000px; /* Define a largura máxima do contêiner */
+    max-height: 4000px;
+    background-color: #F2E5BF;
+}
+        
+body{
+    font-family: sans-serif;
+    background-color: #F2E5BF;
+}
+/* Estilo para a barra de navegação */
+.custom-navbar {
+    background-color: #257180;
+    
+}
+
+/* Estilo para o texto da marca */
+.custom-brand {
+    color: #fff; /* Branco */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.custom-brand:hover {
+    color: #fff;
+}
+
+/* Estilo para os links da navegação */
+.custom-link {
+    color: #fff; /* Branco */
+    margin-right: 1rem;
+}
+
+.custom-link:hover {
+    color: #6cf1a4; /* Cor clara ao passar o mouse */
+}
+
+/* Estilo para o botão "Sair" */
+.custom-btn {
+    background-color: #dc3545; /* Vermelho do Bootstrap */
+    color: white;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+}
+
+.custom-btn:hover {
+    background-color: #c82333; /* Vermelho mais escuro ao passar o mouse */
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+
+
+.blur-background {
+    filter: blur(5px); /* Aplica um efeito de desfoque de 5px no conteúdo */
+    pointer-events: none; /* Impede interações com os elementos enquanto estão desfocados */
+}
+
+.overlay {
+    position: fixed; /* Fixa o overlay na tela, mesmo ao rolar a página */
+    top: 0; /* Alinha ao topo da página */
+    left: 0; /* Alinha à esquerda da página */
+    width: 100%; /* O overlay cobre 100% da largura da tela */
+    height: 100%; /* O overlay cobre 100% da altura da tela */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semitransparente para escurecer a tela */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do overlay */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    z-index: 9999; /* Mantém o overlay acima de todos os outros elementos */
+}
+
+.modal-form {
+    background-color: white; /* Fundo branco para o formulário modal */
+    padding: 20px; /* Espaçamento interno de 20px */
+    border-radius: 10px; /* Bordas arredondadas no modal */
+    max-width: 500px; /* Define uma largura máxima de 500px */
+    width: 100%; /* Largura total do modal */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o modal */
+    z-index: 10000; /* Garante que o modal fique acima do overlay */
+    pointer-events: auto; /* Permite interação com o modal */
+}
+
+.form-container {
+    display: none; /* Oculta o contêiner do formulário até ser ativado */
+}
+
+.close-btn {
+    text-align: right; /* Alinha o botão de fechar à direita */
+    font-size: 1.5rem; /* Tamanho da fonte para o botão de fechar */
+    cursor: pointer; /* Indica que o botão é clicável */
+}
+
+.success-badge {
+    display: none; /* Inicialmente oculto até ser ativado */
+    position: fixed; /* Fixa a posição na tela */
+    top: 20px; /* Posiciona 20px abaixo do topo */
+    right: 20px; /* Posiciona 20px à esquerda da borda direita */
+    background-color: #302c2c; /* Cor de fundo verde (indicando sucesso) */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o badge */
+    z-index: 10000; /* Garante que o badge fique acima de outros elementos */
+}
+
+.button-group {
+    margin-bottom: 20px; /* Espaçamento inferior entre o grupo de botões */
+}
+
+.custom-create-class-btn {
+    background-color: #a74628; /* Cor de fundo verde para o botão */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove a borda do botão */
+    padding: 10px 20px; /* Define espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Indica que o botão é clicável */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Animações suaves na cor de fundo e transformação */
+    width: 40%; /* Define a largura do botão */
+    height: 60px; /* Define a altura do botão */
+}
+
+.custom-create-class-btn:hover {
+    background-color: #218838; /* Altera a cor de fundo ao passar o mouse */
+    color: white; /* Mantém o texto branco ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão em 5% ao passar o mouse */
+}
+
+.profile {
+    position: relative; /* Necessário para posicionamento absoluto dos elementos filhos */
+    text-align: center; /* Centraliza o conteúdo de texto no contêiner */
+    width: 10%; /* Define a largura do contêiner do perfil */
+}
+
+.profile img {
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    width: 100px; /* Define a largura da imagem */
+    height: 100px; /* Define a altura da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste ao contêiner sem distorcer */
+}
+ /* -------------------- icone de atualizar a foto------------------- */
+.edit-icon {
+    position: absolute; /* Permite o posicionamento em relação ao contêiner pai */
+    right: 100px; /* Posiciona o ícone a 80px da borda direita */
+    top: 31%; /* Posiciona o ícone verticalmente */
+    transform: translateY(-50%); /* Centraliza verticalmente o ícone */
+    background-color: #E6FFFF; /* Define a cor de fundo do ícone */
+    border-radius: 50%; /* Torna o ícone circular */
+    cursor: pointer; /* Indica que o ícone é clicável */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra ao ícone */
+    padding: 4px; /* Define o espaçamento interno do ícone */
+    display: flex; /* Ativa o flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    color:#302c2c;
+}
+
+.edit-icon svg {
+    width: 18px; /* Define a largura do ícone SVG */
+    height: 15px; /* Define a altura do ícone SVG */
+}
+.bi-pencil-square{
+    width: 20px; /* Define a largura do ícone SVG */
+    height: 18px; /* Define a altura do ícone SVG */
+    color:black;
+}
+
+#fileInput {
+    display: none; /* Oculta o input de arquivo até ser acionado */
+}
+
+.square-container {
+    border: 1px solid #ccc; /* Borda cinza ao redor do contêiner */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 20px; /* Espaçamento inferior entre os quadros */
+    width: 150%; /* Aumenta a largura do contêiner */
+}
+
+/* ------------------------fieldset do perfil---------------- */
+.profile {
+    width: 30%; /* Define a largura do contêiner do perfil para 60% do espaço disponível */
+    max-width: 300px; /* Define uma largura máxima de 600px */
+    padding: 15px; /* Diminui o espaçamento interno */
+    margin: 0 auto; /* Centraliza o fieldset */
+    background-color: #257180;
+    color: white; /* Texto branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+    height: 465px;
+}
+/* #E6FFFF */
+.profile input {
+    background-color: #E6FFFF; /* Fundo verde escuro nos inputs */
+    color: black; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50px; /* Bordas arredondadas nos inputs */
+    padding: 3px; /* Espaçamento interno nos inputs */
+    width: 90%; /* Largura ajustada para caber no contêiner */
+    margin-bottom: 25px; /* Espaçamento inferior entre os inputs */
+    
+}
+.profile input:hover{
+    background-color: #E6FFFF;
+}
+
+.inputSub {
+    background-color: white; /* Fundo branco nos inputs */
+    color: black; /* Texto preto */
+    border: 1px solid #ccc; /* Borda cinza padrão */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.inputSub:focus {
+    background-color: white; /* Fundo branco quando em foco */
+    color: black; /* Texto preto quando em foco */
+    outline: none; /* Remove o contorno padrão quando em foco */
+}
+
+.profile label {
+    display: block; /* Exibe o rótulo ocupando toda a linha */
+    margin-bottom: 7px; /* Espaçamento inferior entre o rótulo e o input */
+    font-weight: 400; /* Define o peso da fonte */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+h1 {
+
+    text-align: left;
+    color: #302c2c; /* Branco */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main-content {
+    width: 55%; /* Ajusta a largura do conteúdo principal */
+}
+
+.main-content h2 {
+    margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+.main-content textarea {
+    width: 40%; /* Define a largura da área de texto */
+    height: 100px; /* Define a altura da área de texto */
+    resize: none; /* Remove a capacidade de redimensionar a área de texto */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+
+
+.content-wrapper {
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    gap: 20px; /* Espaçamento entre os elementos */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+/* Fieldset do perfil */
+.profile {
+    flex: 1; /* O contêiner do perfil ocupa 1 fração do espaço disponível */
+}
+
+.info-and-forms {
+    flex: 1; /* O contêiner de informações ocupa 1 fração do espaço disponível */
+}
+
+.info-section, .form-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve opacidade */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-bottom: 20px; /* Espaçamento inferior entre as seções */
+}
+/* ---------------- quadro informativo-------------------------------------------- */
+textarea {
+    width: 100%; /* Largura total para a área de texto */
+    height: 150px; /* Altura fixa */
+    resize: none; /* Impede o redimensionamento */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda cinza */
+    display: block;
+    
+    
+}
+h2{
+    text-align: center;
+}
+.custom-create-class-btn {
+    background-color: #257180;  /* Cor de fundo azul cadete */
+    color: white; /* Texto branco */
+    width: 25%;
+    font-size: 20px;
+}
+.custom-create-class-btn:hover{
+    background-color:darkslategrey ; /* Cor ao passar o mouse */ 
+    color: white;
+}
+
+/* Estilos básicos para os inputs */
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.custom-button {
+    background-color: #CB6040;
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 0 10px; /* Margem entre os botões */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+    font-size: 18px;
+}
+.custom-button:hover {
+    background-color: #FD8B51; /* Cor ao passar o mouse */
+    
+}
+        /* Estilos do modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 30px;
+            border-radius: 50px;
+            border: 1px solid #888;
+            width: 25%;
+            
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .form-control{
+            border-radius: 50px;
+            margin-bottom: 15px;
+        }

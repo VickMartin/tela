@@ -9,7 +9,7 @@ try{
 
 
     );
-    $conexao = new PDO("mysql:host=localhost;dbname=vitoria",  username: "root", password: "", options: $options);
+    $conexao = new PDO("mysql:host=localhost;dbname=educamentes",  username: "root", password: "", options: $options);
     //se aconexão ser realizada com sucesso aparecer a mensagem:
 
     echo"Conexão realizada com sucesso";

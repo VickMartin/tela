@@ -19,7 +19,7 @@ class Conexao {
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             );
                 self::$conexao = new 
-                PDO(dsn: "mysql:host=localhost;dbname=vitoria",
+                PDO(dsn: "mysql:host=localhost;dbname=educamentes",
                 username: "root",password: "", options: $options);
 
             } catch (PDOException $exc) {
